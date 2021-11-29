@@ -1,19 +1,18 @@
-{% extends 'base.html'%}
 
-{%  block title %}
-
- 
-{% endblock %}
-
-
-{% block content %}
-    <div class="container">
-
-        <div class="row">
-                <div class="col">
-                    <h1>tusa</h1>
-                </div>
-        </div>
-    </div>
-
-{% endblock %}
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <a class="navbar-brand text-white" href="/"><h4><strong>HOME</strong></h4></a>
+    <a class="navbar-brand text-white" href="/"><h4><strong>GALLERY</strong></h4></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        </ul>
+                <!-- Adding a search form -->
+        <form class="form-inline my-2 my-md-0"  action="/search" role="search">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search Category" name="imagesearch" aria-label="Search">
+          <button class="btn btn-info btn-md my-2 my-sm-0" type="submit"><i class="glyphicon glyphicon-search"></i>Search</button>
+        </form>
+      </div>
+  </nav>
