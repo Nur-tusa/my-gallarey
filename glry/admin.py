@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import  gallery_type
+from .models import  gallery_category, photos, Location
 
 # Register your models here.
 
-admin.site.register(gallery_type)
-# admin.site.register(pictures)
-# admin.site.register(address)
+admin.site.register(gallery_category)
+admin.site.register(photos)
+admin.site.register(Location)
