@@ -43,3 +43,6 @@ class photos(models.Model):
     title = models.CharField(max_length=100)
     #image field
     image = CloudinaryField('image')
+
+    # gallery_category = models.ForeignKey('gallery_category',on_delete=models.CASCADE,null=True)
+    Location = models.ForeignKey('Location',on_delete=models.CASCADE,null=True)

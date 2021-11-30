@@ -1,20 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container-fluid boded" id="b">
+<div class="container-fluid boded" id="photos">
     <div class="container">
 
         <div class="row">
             <div class="col-md-7">
-                <h2>My Gallery</h2>
+                <h2>My photos</h2>
             </div>
-            <div class="col-md-5">
-            <span id="locations">
-                {% for location in locations %}
-                    <a class="btn btn-outline-info btn-sm" id="btn" href="/location/{{location.name}}">{{location.name}}</a>
-                {%endfor%}
-             </span>
-            </div>
+          
         </div>
         <hr>
         <div class="card-columns">
@@ -23,7 +17,7 @@
                 <img src="{{image.image.url}}" alt="{{image.name}}" class="card-img">
             </div>
 
-            <div class="modal fade" id="{{image.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="{{image.id}}" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-md" role="document">
                     <div class="modal-content modalcard">
                         <div class="modal-header">
@@ -34,8 +28,7 @@
                         </div>
                         <div class="modal-body">
                             <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid">
-                            <p class="imgdesc text-center">{{image.description}}</p>
-                            <span class="btn btn-sm btn-outline-success">{{image.category}}</span> <a href="/location/{{image.location}}" class="btn btn-sm btn-outline-info">{{image.location}}</a>
+                           
                         </div>
                         <div class="modal-footer">
                             <input class="form-control input-lg" type="text" value="{{image.image.url}}" id="{{image.id}}.url">

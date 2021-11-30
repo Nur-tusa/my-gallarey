@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from .models import photos, Location
+
+import glry
+from .models import photos, Location, gallery_category
 
 # Create your views here.
 def index(request):
@@ -20,3 +22,4 @@ def search_results(request):
     else:
         message = "You haven't searched for any image category"
         return render(request, 'glrys/search.html', {"message": message})
+
