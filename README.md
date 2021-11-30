@@ -47,3 +47,6 @@ Testing the application.
   Address : nairobi-kenya
 
   phone number : +254115314390
+
+  # copy right
+  reserved to only tusa@company
