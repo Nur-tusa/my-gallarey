@@ -41,3 +41,9 @@ Testing the application.
 
 * github
 
+# contact
+  name : Nur nure tusa
+
+  Address : nairobi-kenya
+
+  phone number : +254115314390
