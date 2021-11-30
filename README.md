@@ -1,4 +1,6 @@
 # Gallery
+# front page
+ <img src="/images/g.png">
 
 ## Author
 * Nur nure tusa
