@@ -9,11 +9,14 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
 import os
-import django_heroku
 import dj_database_url
+from pathlib import Path
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+from decouple import config
+import django_heroku
 from decouple import config,Csv
 
 MODE=config("MODE", default="dev")
@@ -181,9 +184,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
-import cloudinary
-import cloudinary.uploader
-import cloudinary.api
+
 
 cloudinary.config( 
   cloud_name = "galole", 
