@@ -5,6 +5,9 @@
 ## Author
 * Nur nure tusa
 
+## live link to website
+https://glry-tusa.herokuapp.com/
+
 ## Description
 This is a Django application which user can upload images ,view imaes and also can get link of the image
 
